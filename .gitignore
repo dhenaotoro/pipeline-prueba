@@ -1,2 +1,4 @@
 # Build and docs folder/files
 env/*
+tests/__pycache__/*
+src/__pycache__/*
