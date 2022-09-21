@@ -12,6 +12,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Configuración de entorno de python
       uses: actions/setup-python@v2
+      run: pip install -r requirements.txt
       with:
         python-version: '3.7'
     - name: Correr pruebas
@@ -20,6 +21,5 @@ jobs:
     - name: Calculo de cubrimiento
       id: cubrimiento
       run: |
-          pip install -r requirements.txt
           coverage run -m unittest tests/test_persona.py
           coverage report -m
