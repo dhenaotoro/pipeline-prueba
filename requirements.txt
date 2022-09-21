@@ -16,4 +16,4 @@
 # scipy==1.0
 #
 Faker
-coverage==5.3
+coverage
