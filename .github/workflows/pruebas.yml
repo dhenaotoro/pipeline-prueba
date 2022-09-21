@@ -22,7 +22,7 @@ jobs:
       id: correr-pruebas
       run: python -m unittest -v tests/test_persona.py
     - name: Validar resultado con errores
-      if: ${{ faiture() }}
+      if: ${{ failure() }}
       end:
         MENSAJE_ERROR: Una o varias pruebas fallaron
       run: echo "::set-output name=respuesta::${MENSAJE_ERROR}"
