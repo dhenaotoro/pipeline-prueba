@@ -1,7 +1,7 @@
 name: Hola mundo
 on:
   push:
-    branches: [master]
+    branches: [recetario]
 
 jobs:
   Mi-primer-job:
